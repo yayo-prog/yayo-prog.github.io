@@ -17,7 +17,7 @@ Basic editing of the image
    4. [Precompilation](https://stackoverflow.com/questions/40116045 "exteinson on pre-compilation: stackoverflow") - dynamic language means:
     * All top-level statements are executed at precompile-time, instead of at load-time.
     * Any statements that are to be executed at load-time must be moved to the __init__ function.
-   5. Images package is actually a collection of some other useful packages (Colors, ImageAxes…) - this is easy for use but in case you intended on developing your own package it’s suggested to use the specific packages: ImagesCore…
+   5. [Images package](https://juliaimages.org/latest/pkgs/#page_packages_index-1 "packages under Images") is actually a collection of some other useful packages (Colors, ImageAxes…) - this is easy for use but in case you intended on developing your own package it’s suggested to use the specific packages: ImagesCore…
 
 
 
@@ -51,19 +51,28 @@ Basic editing of the image
    4. we can change the annotation type to draw other shapes
    5. The annotation is part of the GUI not the image itself, hence it wont change the image itself if want to save it
 
-4. Editing the image: editing an image or changing the values of certain pixels can be done in several ways
+4. **_Editing the image:_** editing an image or changing the values of certain pixels can be done in several ways
   1. **Rectangles or slices**
-  2. rect_cp = logo[181:200, 81:180]
-  3. Rect_v = @view logo[101:120, 81:180]
-  4. Fill the entire rect - using fill or .=
-  5. We can see the difference in the image only for the view object which is a pointer to the same memory location
-  6. **Mask** - can be for non adjacent pixels
-  7. Mask is a binary representation of the image, for example:
+  ```julia
+  rect_cp = logo[181:200, 81:180]
+  rect_v = @view logo[101:120, 81:180]
+  ```
+  2. default assignments creates a copy of the slice, so Images gives us @view macro to set a pointer.
+  4. Fill the entire rect - using fill or .= , colorant is a syntactic sugar returning different colors
+  ```julia
+  rect_cp .= RGB(0,0,1)
+  rect_v .= colorant"magenta"
+  imshow!(guidict, logo);
+  ```
+  5. [Colorant](https://github.com/JuliaGraphics/ColorTypes.jl "color type") is the highest abstract type representing all kind of colors
+  6. We can see the difference in the image only for the view object which is a pointer to the same memory location
+  7. **Mask** - can be for non adjacent pixels
+  8. Mask is a binary representation of the image, for example:
   ```julia
   dots = (blue.(logo) .> 0.7) .& (red.(logo) .< 0.7 )
   ```
-  8. We can use it to edit all pixels with those conditions (to view it  we need to open a new image window. Because we changed the image itself
-  9. We can alter the binary matrix to a list of cartesian index
+  9. We can use it to edit all pixels with those conditions (to view it  we need to open a new image window. Because we changed the image itself
+  10. We can alter the binary matrix to a list of cartesian index
   ```julia
   findall(red_dot)
   ```
