@@ -54,9 +54,12 @@ this requires Atom.jl , IJulia.jl, Juno.jl
   * Some of the different modes of the repl 
 * Packages: part of the julia ecosystem is the different packages we can add.
   * Julia comes with it’s built in package manager which is called Pkg.
-  * We can use it in code after ```“julia> using Pkg”``` or enter package mode
-  * Activate an environment, to be more capsulated and this want mess with other packages and dependencies
-  ``` (@v1.4) pkg> add Images, ImageView, TestImages, ImageMagick ```
+  * We can use it in the code after calling ```julia> using Pkg``` or enter package mode by ```]``` in the beging of the line in the REPL
+  * Activate an environment, to be more encapsulated and this want mess with other packages and dependencies
+    ```julia 
+    (@v1.4) pkg> activate .
+    (@v1.4) pkg> add Images, ImageView, TestImages, ImageMagick 
+    ```
 And add Images, ImageView, TestImages, ImageMagick
 * See you in the next video to start working with those packages
 
