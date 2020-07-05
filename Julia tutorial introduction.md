@@ -1,5 +1,5 @@
 **_Julia language introduction:_**
-*Hi everyone welcome to my julia language series. When I found out about Julia I thought the language was super cool, I mean it’s really  FAST and at first glance it was like just python to me. Everything looked straight forward to code ,  
++Hi everyone welcome to my julia language series. When I found out about Julia I thought the language was super cool, I mean it’s really  FAST and at first glance it was like just python to me. Everything looked straight forward to code ,  
 But… well, you know that’s not always the case, and there are tweaks that you need to know if you want to really program in any language.
 Hopefully this series will be all about that - the “know how” of Julia.
 *Julia language  has a really  growing community, and the packages and their githubs are excellent, and the julia-con videos are really interesting but for me i found that there aren’t many “hands on” tutorials, and that's kinda what i like...
@@ -9,7 +9,7 @@ Hopefully this series will be all about that - the “know how” of Julia.
 *I know that Julia had it’s reputation for inconsistency in prior versions (mainly before 1.x) but it really comes from the rapid growth of the language.  I'll be using Julia 1.4 for this series which is a stable version.
 
 
-*Trying to break down Julia to its main features and where does it get it speen from:
++Trying to break down Julia to its main features and where does it get it speen from:
 ..*Dynamic language - meaning you can work interactively, that's called a REPL (Read Eval Print Loop), and it’s really nice developing this way.
 ..*JIT compilation - which means Julia actually compiles everything it reads, for example  function definition and so on, and that makes it fast.
 ..*Multi-dispatch - a way of definig julia function, they can (but not mandatory) be defined with a specific arguments type, this again help the compiler to allocate the memory better and helps the speed
