@@ -1,4 +1,5 @@
 **_Julia language introduction:_**
+[!Watch the video](https://img.youtube.com/vi/Vy4vu_coH9A&list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb/maxresdefault.jpg)(https://www.youtube.com/watch?v=Vy4vu_coH9A&list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb)
 + Hi everyone welcome to my julia language series. When I found out about Julia I thought the language was super cool, I mean it’s really  FAST and at first glance it was like just python to me. Everything looked straight forward to code ,  
 But… well, you know that’s not always the case, and there are tweaks that you need to know if you want to really program in any language.
 Hopefully this series will be all about that - the “know how” of Julia.
@@ -27,8 +28,9 @@ I think that will give us a good base to explore the best in julia as well as so
 
 
 **Install Julia:**
-We’ll do the long way installation - start download from XXX
+We’ll do the long way installation. use can download the binaries from julialang [site](https://julialang.org/downloads/ "Donwland latest juila") or ust wget
 ```bash
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.4/julia-1.4.2-linux-x86_64.tar.gz
 tar -xvzf julia-1.4.2-linux-x86_64.tar.gz
 sudo cp -r julia-1.4.2 /opt/
 sudo ln -s /opt/julia-1.4.2/bin/julia /usr/local/bin/julia
@@ -36,7 +38,7 @@ sudo ln -s /opt/julia-1.4.2/bin/julia /usr/local/bin/julia
 
 * I’m using a linux machine, specifically ubuntu 18.04.
 Actually i think 18.04 actually support julia with apt install, but this way we can specify the exact version
-* If you are using Windows pc use the .exe file, after installation everything should run the same. specific instruction are here (julia instruction)
+* If you are using Windows pc donwload the .exe file and follow the [instructions](https://julialang.org/downloads/platform/ "platform specific instructions") , after installation everything should run the same.
 * My background mainly involves python and computer vision so some of the features i’ll work with will be images related.
 
 * I think beginner programers can also follow along these tutorials, and mainly learn via examples
@@ -47,22 +49,16 @@ this requires Atom.jl , IJulia.jl, Juno.jl
 
 
 
-
-
 * Let’s open our REPL (Read Eval Print Loop) environment
   * This is where you can run julia code
-  * Some of the different modes of the repl 
+  * Some of the different modes of the repl
 * Packages: part of the julia ecosystem is the different packages we can add.
   * Julia comes with it’s built in package manager which is called Pkg.
   * We can use it in the code after calling ```julia> using Pkg``` or enter package mode by ```]``` in the beging of the line in the REPL
   * Activate an environment, to be more encapsulated and this want mess with other packages and dependencies
-    ```julia 
+    ```julia
     (@v1.4) pkg> activate .
-    (@v1.4) pkg> add Images, ImageView, TestImages, ImageMagick 
+    (@v1.4) pkg> add Images, ImageView, TestImages, ImageMagick
     ```
 And add Images, ImageView, TestImages, ImageMagick
 * See you in the next video to start working with those packages
-
-
-
-
