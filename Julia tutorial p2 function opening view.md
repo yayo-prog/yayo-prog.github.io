@@ -1,4 +1,4 @@
-**_Intro_**
+## **_Intro_**
 * Hi everyone welcome back to another julia language tutorial. We are working on our image puzzle game
 * Last video we’ve gone through image basics and finished with some visualization of the image.
 * In this video we will start using a more realistic image and we will create our opening view which is simply the scrambled image.
@@ -28,15 +28,16 @@ col_slices = row_slices
 blocks = [(x,y) for y in col_slices for x in col_slices]
 reshape(blocks , nof_rows, nof_rows)  # This is just for view
 ```
-  1. We can index the array by 2 indexing [r,c] or single index [ind] ```juila
-	 length(blocks)
-	 ```
+  1. We can index the array by 2 indexing [r,c] or single index [ind]
+	```julia
+	length(blocks)
+	```
 	 will the size by one number
   2. Iterate all the tiles
 3. **_Function:_**
   1. Using parametric method which is defined for those type of arguments
   2. after the semicolon - optional arguments with default values
-		```julia
+	```julia
 	function init_game(img::Array{T}; nof_rows::Int=4) where T<:Colorant
 		Row_slices = ...
 		Blocks = [(x,y) for y in col_slices for x in row_slices]
@@ -46,24 +47,14 @@ reshape(blocks , nof_rows, nof_rows)  # This is just for view
 		shuf_blocks = shuffle(blocks)
 
 		For b in 1:length(blocks)
-			Shuf[shuf_blocks[b][1] , .... = img[blocks[b][1]...]
+			shuf[shuf_blocks[b][1] , shuf_blocks[b][2] ] =
+				img[blocks[b][1], blocks[b][2]]
 		End
 	end
 	```
 
-Wow that’s really great progress, we’ve covered so much
++ Wow that’s really great progress, we’ve covered so much
 Next we will show how we can start the game and we will talk about modules
 Don’t forget to comment below and tell me what you think
 It you like what i’m doing don’t forget to subscribe to get notify when a new video is released
 Thanks
-
-
-FLOW
-Ramp up
-Toy example- 2 block per row
-
-
-Generalize tiles (square power of 2)
-
-Function
-With types

@@ -1,11 +1,11 @@
-**_Julia language introduction:_**
+## **_Julia language introduction:_**
 
 [![Watch the video](https://img.youtube.com/vi/Vy4vu_coH9A/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vy4vu_coH9A "Intoductcion video")
 
 + Hi everyone welcome to my julia language series. When I found out about Julia I thought the language was super cool, I mean it’s really  FAST and at first glance it was like just python to me. Everything looked straight forward to code ,  
 But… well, you know that’s not always the case, and there are tweaks that you need to know if you want to really program in any language.
 Hopefully this series will be all about that - the “know how” of Julia.
-*Julia language  has a really  growing community, and the packages and their githubs are excellent, and the julia-con videos are really interesting but for me i found that there aren’t many “hands on” tutorials, and that's kinda what i like...
+* Julia language  has a really  growing community, and the packages and their githubs are excellent, and the julia-con videos are really interesting but for me i found that there aren’t many “hands on” tutorials, and that's kinda what i like...
 
 * I think my inspiration comes mainy from the sentdex channel which I love and use frequently. And I wanted to also create and share something for others to use.
 
@@ -19,7 +19,7 @@ Hopefully this series will be all about that - the “know how” of Julia.
   * It’s NOT an object oriented language, in my perspective it comes copouled with multi-dispatch  paradigm. Meaning you should define a specific method(dispatch) of the function for different variable types, rather than implementing them in the object
 
 
-*As is said, I think the best way to learn is by simply rolling out your sleeves and start coding. I encourage you all to follow along the examples I’ll do or simply use the snippets for your own project. I will also upload a text version of these videos to github so you can choose your format
+* As is said, I think the best way to learn is by simply rolling out your sleeves and start coding. I encourage you all to follow along the examples I’ll do or simply use the snippets for your own project. I will also upload a text version of these videos to github so you can choose your format
 
 * So for the first project I thought of building A simple “Image Puzzle Game”. Where you get a scrambled image, that is an image that was broken into tiles but the tiles were misplaced, the player's goal is to arrange those pieces by swapping them around, to get the complete image.
 Pretty simple right…
@@ -44,7 +44,7 @@ Actually i think 18.04 actually support julia with apt install, but this way we 
 * My background mainly involves python and computer vision so some of the features i’ll work with will be images related.
 
 * I think beginner programers can also follow along these tutorials, and mainly learn via examples
-*Please comment what you think below, that will help me improve my content for you.
+* Please comment what you think below, that will help me improve my content for you.
 
 * I’ll be coding mainly through the basic REPL, if you can I recommend working with Juno - which is an IDE based on the atom editor.
 this requires Atom.jl , IJulia.jl, Juno.jl
