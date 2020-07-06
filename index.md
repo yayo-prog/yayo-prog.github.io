@@ -1,6 +1,6 @@
 
-## Julia languge tutorials.
-The text version for yayo-prog youtube channel
+# Julia languge tutorials.
+text version tutoarial for yayo-prog youtube channel
 
   [introduction](/Julia%20tutorial%20introduction "Intoduction")
 1. [Julia tutorial p1](/Julia%20tutorial%20p1%20image%20basics "Images basics") - images basics
@@ -10,4 +10,4 @@ The text version for yayo-prog youtube channel
   + Images.jl    - representation of images, editing , IO
   + ImageShow.jl - imshow
 3.
-[//]: # (100. 2. [Julia tutorial px - yyy](/zzz ""))
+<!--100. [Julia tutorial px ](/zzz "") - yyy -->

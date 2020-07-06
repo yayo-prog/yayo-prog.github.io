@@ -9,7 +9,8 @@ Basic editing of the image
 * So this will be what we will cover today.
 
 
-1. **_Using:_** In our into video we’ve created an environment and added some packages to it
+### **_Using:_**
+In our into video we’ve created an environment and added some packages to it
    1. Activate our env
    2. ] status for checking which are our loaded package
 

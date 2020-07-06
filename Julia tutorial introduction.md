@@ -1,4 +1,4 @@
-## **_Julia language introduction:_**
+# **_Julia language introduction:_**
 
 [![Watch the video](https://img.youtube.com/vi/Vy4vu_coH9A/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vy4vu_coH9A "Intoductcion video")
 
@@ -29,7 +29,7 @@ I think that will give us a good base to explore the best in julia as well as so
 
 
 
-**Install Julia:**
+### **Install Julia:**
 We’ll do the long way installation. use can download the binaries from julialang [site](https://julialang.org/downloads/ "Donwland latest juila") or ust wget
 ```bash
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.4/julia-1.4.2-linux-x86_64.tar.gz
@@ -50,7 +50,7 @@ Actually i think 18.04 actually support julia with apt install, but this way we 
 this requires Atom.jl , IJulia.jl, Juno.jl
 
 
-
+### REPL
 * Let’s open our REPL (Read Eval Print Loop) environment
   * This is where you can run julia code
   * Some of the different modes of the repl
