@@ -1,5 +1,5 @@
 **_Julia language introduction:_**
-[!Watch the video](https://img.youtube.com/vi/Vy4vu_coH9A&list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb/maxresdefault.jpg)(https://www.youtube.com/watch?v=Vy4vu_coH9A&list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb)
+[!Watch the video](https://img.youtube.com/vi/Vy4vu_coH9A/maxresdefault.jpg)(https://www.youtube.com/Vy4vu_coH9A)
 + Hi everyone welcome to my julia language series. When I found out about Julia I thought the language was super cool, I mean it’s really  FAST and at first glance it was like just python to me. Everything looked straight forward to code ,  
 But… well, you know that’s not always the case, and there are tweaks that you need to know if you want to really program in any language.
 Hopefully this series will be all about that - the “know how” of Julia.
