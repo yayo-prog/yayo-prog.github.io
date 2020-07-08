@@ -27,7 +27,7 @@ In our into video we’ve created an environment and added some packages to it
 
 
 
-2. **_Load image:_**
+### **_Load image:_**
   1. I have prepared the julia logo image (png) format
    ```julia
    logo = load("~/Downloads/julia_logo.png")
@@ -35,29 +35,36 @@ In our into video we’ve created an environment and added some packages to it
   2. Julia always returns the last executed code, and represents it on the REPL. So What we see is the representation of the image as it was stored in the ‘logo’ variable but not the image itself..
   3.  Julia represents an image as a 2D array of pixels;  in our case it’s a 4 channel RGBA, those pixels can also be a 1 channel -  in a grayscale image or 3 channels in simple RGB.
     + This may be a bit confusing for those coming from other languages, But in my opinion it is really the correct way of thinking of images,
- we can see the full 4 channels with channelview function (and it’s inverse: colorview)
-     + We can use julia> permutedims(chnl_v, [2,3,1,4]) ) to arrange
-     OR
-     PermutedDimsArray - to only use pointer rather than copy
-     OR
-     using red() / green for the specific channel
+    + We can see the full 4 channels with several options:
+          1. channelview function `chnl_v = channel_view(logo)` expands each pixel channels to the first dimension (to convert back: `colorview(chnl_v)`)
+
+          use `permutedims(chnl_v, [2,3,1]) )` to arrange the color channels in the third type.
+
+          `PermutedDimsArray(chnl_v)` - to only use pointer rather than copy.
+
+         2. using `red.(logo)` / `green.(logo)`.. to extract a  specific channel
+
      + N0f8 - is a fixed point numerical representation. this avoid the need to convert int to double and creates numeric errors
 
 
-3. **_Visualize:_** ImageView is the package we need for viewing the image, if we work with Juno / Jupyter you will see it directly (show method is overloaded)
-  1.
-  ```
-  guidict = imshow(logo)
+### **_Visualize:_**
+ImageView is the package we need for viewing the image, if we work with Juno / Jupyter you will see it directly (show method is overloaded)
+  1. open a new window showing the image:
+  ```Julia
+  guidict = imshow(logo, name="My Image")
   ```
   2. Will cover more of the fields in the dictionary in future videos, for now we can understand the concept of the dictionary holding multiple variables accessible by “keys” rather specific order
-   3. Let’s write something on the image:
-   ```julia
-   annotate!(guidict, AnnotationText(col, row, "something", color=RGB(0,0,1), fontsize=15))
+  3. Let’s write something on the image:
+   ```Julia
+   idx = annotate!(guidict, AnnotationText(col, row, "something", color=RGB(0,0,1), fontsize=15))
   ```
-   4. we can change the annotation type to draw other shapes
-   5. The annotation is part of the GUI not the image itself, hence it wont change the image itself if want to save it
+  4. we can change the annotation type to draw other shapes
+  5. The annotation is part of the GUI not the image itself, hence it wont change the image itself if want to save it
+  6. to delete the annotaion `delete!(guidict, idx)`
+  > note: ! - denotes an "in-place" method editing the first argument rather than creating a copy.
 
-4. **_Editing the image:_** editing an image or changing the values of certain pixels can be done in several ways
+### **_Editing the image:_**
+editing an image or changing the values of certain pixels can be done in several ways
   1. **Rectangles or slices**
   ```julia
   rect_cp = logo[181:200, 81:180]
@@ -65,6 +72,8 @@ In our into video we’ve created an environment and added some packages to it
   ```
   2. default assignments creates a copy of the slice, so Images gives us @view macro to set a pointer.
   4. Fill the entire rect - using fill or .= , colorant is a syntactic sugar returning different colors
+  > .= (and any 'dot' notation is broadcasting - applying the function to each element sepearatly )
+
   ```julia
   rect_cp .= RGB(0,0,1)
   rect_v .= colorant"magenta"
@@ -77,11 +86,19 @@ In our into video we’ve created an environment and added some packages to it
   ```julia
   dots = (blue.(logo) .> 0.7) .& (red.(logo) .< 0.7 )
   ```
-  9. We can use it to edit all pixels with those conditions (to view it  we need to open a new image window. Because we changed the image itself
-  10. We can alter the binary matrix to a list of cartesian index
+  9. We can use it to edit all pixels with those conditions (and refresh the image to the canvas)
+  ```Julia
+  logo[mask] .= colorant"black"
+  imshow!(guidict["gui"]["canvas"], logo);
+  ```
+  10. We can alter the binary matrix to a list of cartesian index and use them in assigning new values (a mater of preferences)
   ```julia
-  findall(red_dot)
+  ll = findall(red_dot)
+  logo[ll] .= colorant"black"
   ```
 
 * I think those very simple manipulations are sufficient for now, and we can start our little project.
 * Next topic we will cover is how to create our opening view of the game and we will use functions for that.
+
+---
+[Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  yayo.prg@gmail.com
