@@ -64,3 +64,7 @@ this requires Atom.jl , IJulia.jl, Juno.jl
     ```
 And add Images, ImageView, TestImages, ImageMagick
 * See you in the next video to start working with those packages
+
+
+---
+[Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  yayo.prg@gmail.com

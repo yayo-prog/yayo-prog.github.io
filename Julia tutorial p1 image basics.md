@@ -1,4 +1,7 @@
 ## **_Intro_**
+
+[![watch the video](https://img.youtube.com/vi/aml-hVfg7XU/maxresdefault.jpg)](https://www.youtube.com/watch?v=aml-hVfg7XU&list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8&index=3&t=0s)
+
 * Hi everyone, welcome to Julia language tutorial.  We are building a small image puzzle game. During this time we will cover julia concepts and some useful packages.
 
 * Thinking of our game we need some fundamentals in order to build it.
@@ -94,3 +97,6 @@ editing an image or changing the values of certain pixels can be done in several
 
 * I think those very simple manipulations are sufficient for now, and we can start our little project.
 * Next topic we will cover is how to create our opening view of the game and we will use functions for that.
+
+---
+[Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  yayo.prg@gmail.com

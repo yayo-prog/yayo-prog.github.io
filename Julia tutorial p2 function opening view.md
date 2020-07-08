@@ -1,6 +1,7 @@
 ## **_Intro_**
 
-[![Julia tutorial p2](PATH TO THUMBNAIL)](PATH TO VID "Julia tutorial p2")
+[![Julia tutorial p2](https://img.youtube.com/vi/AKxER9V9NZ8/maxresdefault.jpg)](https://youtu.be/AKxER9V9NZ8 "Julia tutorial p2")
+
 * Hi everyone welcome back to another julia language tutorial. We are working on our image puzzle game
 * Last video we’ve gone through image basics and finished with some visualization of the image.
 * In this video we will start using a more realistic image and we will create our opening view which is simply the scrambled image.
@@ -108,3 +109,6 @@ Next we will show how we can start the game and we will talk about modules
 Don’t forget to comment below and tell me what you think
 It you like what i’m doing don’t forget to subscribe to get notify when a new video is released
 Thanks
+
+---
+[Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  yayo.prg@gmail.com
