@@ -1,4 +1,9 @@
 ## **_Intro_**
+
+
+[![Watch the video](https://img.youtube.com/vi/aml-hVfg7XU/maxresdefault.jpg)](https://youtu.be/aml-hVfg7XU "Images basics video")
+
+
 * Hi everyone, welcome to Julia language tutorial.  We are building a small image puzzle game. During this time we will cover julia concepts and some useful packages.
 
 * Thinking of our game we need some fundamentals in order to build it.
