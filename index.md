@@ -15,5 +15,8 @@ text version tutoarial for yayo-prog youtube channel
 4. [Julia tutorial p4](/Julia%20tutorial%20p4%20gui%20interaction "Gui & Signals") - Interaction: Gui & Signals
   + Gtk - destroy window
   + Reactive signal - get mouse position
-5. [Julia tutorial p5](/Julia%20tutorial%20p2%20  %20   "swaping tiles") - Swapping Tiles: core logic
+5. [Julia tutorial p5](/Julia%20tutorial%20p5%20swap%20blocks "swaping tiles") - Swapping Tiles: core logic
 <!--100. [Julia tutorial px ](/zzz "") - yyy -->
+
+---
+[Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  [mail me](mailto:yayo.prg@gmail.com "yayo.prg@gmail.com")
