@@ -1,6 +1,6 @@
 ## **_Intro_**
 
-[![Julia tutorial p2](https://img.youtube.com/vi/AKxER9V9NZ8/maxresdefault.jpg)](https://youtu.be/AKxER9V9NZ8 "Julia tutorial p2")
+[![Julia tutorial p2](https://yt-embed.herokuapp.com/embed?v=AKxER9V9NZ8)](https://youtu.be/AKxER9V9NZ8 "Julia tutorial p2")
 
 * Hi everyone welcome back to another julia language tutorial. We are working on our image puzzle game
 * Last video we’ve gone through image basics and finished with some visualization of the image.

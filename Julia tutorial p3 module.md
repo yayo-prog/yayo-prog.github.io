@@ -1,6 +1,6 @@
 ### Intro
 
-[![Julia tutorial p3](https://img.youtube.com/vi/l5YgOb1YPII/maxresdefault.jpg)](https://youtu.be/l5YgOb1YPII "Julia tutorial p3")
+[![Julia tutorial p3](https://yt-embed.herokuapp.com/embed?v=l5YgOb1YPII)](https://youtu.be/l5YgOb1YPII "Julia tutorial p3")
 
 Hi everyone welcome back to another julia language tutorial. We continue to work on our image puzzle game
 We have ended the last tutorial with creating a function that generates our opening view of the game

@@ -1,6 +1,6 @@
 ### Intro
 
-[![Julia tutorial p4](https://img.youtube.com/vi/7js2w1LIUQE/maxresdefault.jpg)](https://youtu.be/7js2w1LIUQE "Julia tutorial p4")
+[![Julia tutorial p4](https://yt-embed.herokuapp.com/embed?v=7js2w1LIUQE)](https://youtu.be/7js2w1LIUQE "Julia tutorial p4")
 
 Hi everyone, welcome to julia language tutorial.
 Last time we saw how to launch the game and how to use modules.
