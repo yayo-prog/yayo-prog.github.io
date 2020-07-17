@@ -198,6 +198,21 @@ end # module PuzzleGame
 
 ```
 
+enviorment status:
+```
+using Pkg
+Pkg.status()
+Status `~/julia_puzzle_game/Project.toml`
+  [4c0ca9eb] Gtk v1.1.4
+  [27996c0f] GtkReactive v1.0.3
+  [6218d12a] ImageMagick v1.1.5
+  [86fae568] ImageView v0.10.8
+  [916415d5] Images v0.22.4
+  [a223df75] Reactive v0.8.3
+  [295af30f] Revise v2.7.3
+  [5e47fb64] TestImages v1.0.3
+```
+
 
 
 ---
