@@ -87,7 +87,11 @@ We are almost done with our puzzle game.
 Next we will work on some performance tips and show how can we use structs
 And of course we will finish the game.
 
-Code so far:
+---
+---
+
+
+#### Code so far:
 ```julia
 
 module PuzzleGame
