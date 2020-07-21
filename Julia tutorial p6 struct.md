@@ -3,8 +3,7 @@ title: "Julia tutorial part 6 - struct"
 permalink: /tutrials/p6
 
 ### Intro
-
-<!-- [![Julia tutorial p5](https://yt-embed.herokuapp.com/embed?v=vBUDqeqq4Xc)](https://youtu.be/vBUDqeqq4Xc "Julia tutorial p5") -->
+[![Julia tutorial p6](https://yt-embed.herokuapp.com/embed?v=M0I2qZnI8Bc)](https://youtu.be/M0I2qZnI8Bc "Julia tutorial p6") 
 
 Hi everyone, welcome to julia language tutorial.
 Last time we created our swap and annotate logic of our image puzzle game

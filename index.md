@@ -1,8 +1,9 @@
 
 # Julia language tutorials.
-To view the entire series, please visit my youtube channel [yayo prog channel](youtube.yayo-prog "yayo-prog channel")
+To view the entire series, please visit my youtube channel [yayo prog channel](https://www.youtube.com/channel/UCMXoQnpwEt0PKdpEklF2BVw "yayo-prog channel")
 
 Here are all the text versions of my Julia tutorials:
+
 [Julia language introduction](/Julia%20tutorial%20introduction "Introduction")
 
 1. [Julia tutorial p1](/Julia%20tutorial%20p1%20image%20basics "Images basics") - images basics
@@ -18,6 +19,8 @@ Here are all the text versions of my Julia tutorials:
   + Gtk - destroy window
   + Reactive signal - get mouse position
 5. [Julia tutorial p5](/Julia%20tutorial%20p5%20swap%20blocks "swaping tiles") - Swapping Tiles: core logic
+  + box annotation
+  + swap blocks
 6. [Julia tutorial p6](/Julia%20tutorial%20p6%20struct "struct") - Struct: game state
   + performance tips
   + avoid global
