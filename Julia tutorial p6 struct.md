@@ -3,7 +3,7 @@ title: "Julia tutorial part 6 - struct"
 permalink: /tutrials/p6
 
 ### Intro
-[![Julia tutorial p6](https://yt-embed.herokuapp.com/embed?v=M0I2qZnI8Bc)](https://youtu.be/M0I2qZnI8Bc "Julia tutorial p6") 
+[![Julia tutorial p6](https://yt-embed.herokuapp.com/embed?v=M0I2qZnI8Bc)](https://youtu.be/M0I2qZnI8Bc "Julia tutorial p6")
 
 Hi everyone, welcome to julia language tutorial.
 Last time we created our swap and annotate logic of our image puzzle game
@@ -52,6 +52,7 @@ We can (and should) declare specific dispatches for the struct, e.g. the method 
 to overload new dispatches from Base first import the specific function: ` import Base.show`
 Let’s create a special call for printing our game state
 This is a good practice, and also will help us debug the code if needed
+```julia
 Import Base.show
 function show(io::IO, game::GameState)
     print("Game $(game.isActive ? "Active" : "Ended"). $(game.swaps) have been conducted and currently on $(game.firstClick ? "First" : "second") click")
@@ -59,10 +60,11 @@ end
 function show(io::IO, ::MIME"text/plain", game::GameState)
     print("Game $(game.isActive ? "Active" : "Ended"). input image size $(size(game.img))")
 end
+```
 2 argument method is the one used in print / repr
 The 3 arguments method is the one used when you time an instance of GameState in the REPL `game_state`
 
-Refactoring:
+### Refactoring:
 To better use our new structure rather than global variables, it is more convenient  to first refactor the ‘do’ syntax into a callback function and pass our new structure as one of the arguments.
 Create the new callback function - make sure to pass the gameState.
 Check the exact type of the passed signal - in our case : `Reactive.Signal` holding: `GtkReactive.MouseButton{GtkReactive.UserUnit}`
