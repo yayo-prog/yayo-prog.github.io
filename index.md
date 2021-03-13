@@ -26,5 +26,12 @@ Here are all the text versions of my Julia tutorials:
   + avoid global
 <!--100. [Julia tutorial px ](/zzz "") - yyy -->
 
+
+## Other Tutorials:
+* [Flat earth - creating videos](/flat_earth_videos "videos") - Creating Videos 
+  + Basic image mnipuliation
+  + sphere projection 
+  + creating videos
+
 ---
 [Home](/index "all tutorial")    &emsp;&emsp;&emsp;    [youtube channel](https://www.youtube.com/playlist?list=PLfH1V5m5U7OyEHo82rQSuhzM_NPKubeb8 "My Channel")  &emsp;&emsp;&emsp;  [mail me](mailto:yayo.prg@gmail.com "yayo.prg@gmail.com")
